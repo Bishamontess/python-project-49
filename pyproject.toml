@@ -15,7 +15,8 @@ flake8 = "^6.0.0"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-even = "brain_games.scripts.brain_even:main"
+brain-even = "brain_games.scripts.games.even:main"
+brain-calc = "brain_games.scripts.games.calc:main"
 
 [build-system]
 requires = ["poetry-core"]

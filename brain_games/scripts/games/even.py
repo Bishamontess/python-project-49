@@ -1,7 +1,5 @@
 import prompt
 import random
-from brain_games.scripts.get_name import get_user_name
-from brain_games.scripts.greeting import greeting_user
 
 
 def game_condition():
@@ -53,14 +51,3 @@ def play_3_times(name):
         counter += 1
     else:
         print(f'Congratulations, {name}!')
-
-
-def main():
-    greeting_user()
-    name = get_user_name()
-    game_condition()
-    play_3_times(name)
-
-
-if __name__ == '__main__':
-    main()

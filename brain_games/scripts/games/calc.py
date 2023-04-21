@@ -1,11 +1,9 @@
 import prompt
 import random
 import operator
-from brain_games.scripts.greeting import greeting_user
-from brain_games.scripts.get_name import get_user_name
 
 
-def calc_condition():
+def game_condition():
     print('What is the result of the expression?')
 
 
@@ -49,14 +47,3 @@ def play_3_times(name):
         counter += 1
     else:
         print(f'Congratulations, {name}!')
-
-
-def main():
-    greeting_user()
-    name = get_user_name()
-    calc_condition()
-    play_3_times(name)
-
-
-if __name__ == '__main__':
-    main()

@@ -14,3 +14,6 @@ brain-calc demonstration:
 
 brain-gcd demonstration:
 	https://asciinema.org/a/NMQtj6xeMgHMdPk3cn817PTdt
+	
+brain-progression demonstration:
+	https://asciinema.org/a/5U4MnEjsdOCMWnSSB3kYRwMQj

@@ -17,3 +17,6 @@ brain-gcd demonstration:
 	
 brain-progression demonstration:
 	https://asciinema.org/a/5U4MnEjsdOCMWnSSB3kYRwMQj
+	
+brain-prime demonstration:	
+	https://asciinema.org/a/x0boonGR5a9P8IraM3Pc2Muv1

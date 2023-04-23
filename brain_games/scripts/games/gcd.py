@@ -1,19 +1,12 @@
+import math
 import prompt
 import random
 
 
 def ask_question():
-    num_1 = random.randint(0, 100)
-    dividers_num_1 = set()
-    for i in range(1, int(num_1 + 1)):
-        if num_1 % i == 0:
-            dividers_num_1.add(i)
-    num_2 = random.randint(0, 100)
-    dividers_num_2 = set()
-    for i in range(1, int(num_2 + 1)):
-        if num_2 % i == 0:
-            dividers_num_2.add(i)
-    correct_answer = max(dividers_num_1.intersection(dividers_num_2))
+    num_1 = random.randint(1, 100)
+    num_2 = random.randint(1, 100)
+    correct_answer = math.gcd(num_1, num_2)
     print(f'Question: {num_1} {num_2}')
     user_answer = int(prompt.string('Your answer: '))
     return correct_answer, user_answer

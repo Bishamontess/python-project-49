@@ -3,16 +3,12 @@ import random
 
 
 def ask_question():
-    num = random.randint(2, 1001)
+    num = random.randint(2, 1000)
     print('Question: ' + str(num))
-    correct_answer: str = ''
-    if num != 2:
-        for i in range(2, num):
-            if num % i == 0:
-                correct_answer = 'no'
+    for i in range(2, num):
+        if num % i == 0:
+            correct_answer = 'no'
             break
-        else:
-            correct_answer = 'yes'
     else:
         correct_answer = 'yes'
     user_answer = prompt.string('Your answer: ')

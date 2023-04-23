@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Alina N <silumain@gmail.com>"]
+description = "arithmetic games"
+authors = ["Alina Nikitina <silumain@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/Bishamontess/python-project-49"
+classifiers = ["Private :: Environment :: Console"]
 packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]

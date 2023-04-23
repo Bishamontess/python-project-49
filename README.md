@@ -3,6 +3,11 @@
 
 <a href="https://codeclimate.com/github/Bishamontess/python-project-49/maintainability"><img src="https://api.codeclimate.com/v1/badges/ff4f2ab9d02f2c113c33/maintainability" /></a>
 
+Brain-games contain games: even number, prime number, count expression, greatest common divisor, number in progression
+
+For installation type 'make package-install'
+
+
 install demonstration: 
 	https://asciinema.org/a/rO3mkRSL3zEjsV9HFul1K6tmU
 

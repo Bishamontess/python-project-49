@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-from brain_games.scripts.greeting import greeting_user
-from brain_games.scripts.get_name import get_user_name
+from brain_games.scripts.brain_games import welcome_user
 from brain_games.scripts.games import calc
 
 
 def main():
-    greeting_user()
-    name = get_user_name()
+    name = welcome_user()
     calc.game_condition()
     calc.play_3_times(name)
 

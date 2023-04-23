@@ -25,16 +25,16 @@ def ask_question():
     correct_answer = max(cross_dividers)
     print(f'Question: {num_1} {num_2}')
     user_answer = int(prompt.string('Your answer: '))
-    answers_list = [num_1, num_2, correct_answer, user_answer]
+    answers_list = [correct_answer, user_answer]
     return answers_list
 
 
 def compare_answer(answers_list, name):
-    if answers_list[2] == answers_list[3]:
+    if answers_list[0] == answers_list[1]:
         print('Correct!')
         return True
     else:
-        wrong_answer = f"'{answers_list[3]}' is wrong answer ;(. Correct answer was '{answers_list[2]}'."
+        wrong_answer = f"'{answers_list[1]}' is wrong answer ;(. Correct answer was '{answers_list[0]}'."
         again = f"\nLet's try again, {name}!"
         try_again = wrong_answer + again
         print(try_again)

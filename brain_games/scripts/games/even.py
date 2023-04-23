@@ -2,18 +2,12 @@ import prompt
 import random
 
 
-def game_condition():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
-
 def ask_question():
     number = random.randint(0, 100)
-    answers_list = []
-    answers_list.append(number)
     question = f'Question: {number}'
     print(question)
     user_answer = prompt.string('Your answer: ')
-    answers_list.append(user_answer)
+    answers_list: [int | None | str] = [number, user_answer]
     return answers_list
 
 

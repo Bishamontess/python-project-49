@@ -13,8 +13,7 @@ def ask_question():
     num_2 = random.randint(1, 10)
     print(f'Question: {num_1} {op} {num_2}')
     user_answer = int(prompt.string('Your answer: '))
-    answers_list = []
-    answers_list.append(user_answer)
+    answers_list: list[int] = [user_answer]
     if op == '-':
         answers_list.append(operator.sub(num_1, num_2))
         return answers_list

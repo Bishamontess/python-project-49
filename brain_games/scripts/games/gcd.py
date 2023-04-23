@@ -4,18 +4,15 @@ import random
 
 def ask_question():
     num_1 = random.randint(0, 100)
-    # find all dividers for num_1, add them to the list
     dividers_num_1 = set()
     for i in range(1, int(num_1 + 1)):
         if num_1 % i == 0:
             dividers_num_1.add(i)
     num_2 = random.randint(0, 100)
-    # find all dividers for num_2, add them to the list
     dividers_num_2 = set()
     for i in range(1, int(num_2 + 1)):
         if num_2 % i == 0:
             dividers_num_2.add(i)
-    # unite both divider's sets in joint set of dividers
     correct_answer = max(dividers_num_1.intersection(dividers_num_2))
     print(f'Question: {num_1} {num_2}')
     user_answer = int(prompt.string('Your answer: '))

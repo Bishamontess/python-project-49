@@ -18,10 +18,11 @@ def compare_answer(answers_list, name):
             print('Correct!')
             return True
         else:
-            wrong_answer = f"'{answers_list[1]}' is wrong answer ;(. Correct answer was '{correct_answer}'."
-            again = f"\nLet's try again, {name}!"
-            try_again = wrong_answer + again
-            print(try_again)
+            wrong_answer = \
+                f"'{answers_list[1]}' is wrong answer ;(. " \
+                f"Correct answer was '{correct_answer}'." \
+                f"\nLet's try again, {name}!"
+            print(wrong_answer)
             return False
     elif answers_list[0] % 2 != 0:
         correct_answer = 'no'
@@ -29,10 +30,11 @@ def compare_answer(answers_list, name):
             print('Correct!')
             return True
         else:
-            wrong_answer = f"'{answers_list[1]}' is wrong answer ;(. Correct answer was '{correct_answer}'."
-            again = f"\nLet's try again, {name}!"
-            try_again = wrong_answer + again
-            print(try_again)
+            wrong_answer = \
+                f"'{answers_list[1]}' is wrong answer ;(. " \
+                f"Correct answer was '{correct_answer}'." \
+                f"\nLet's try again, {name}!"
+            print(wrong_answer)
             return False
 
 

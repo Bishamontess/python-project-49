@@ -29,10 +29,11 @@ def compare_answer(answers_list, name):
         print('Correct!')
         return True
     else:
-        wrong_answer = f"'{answers_list[1]}' is wrong answer ;(. Correct answer was '{answers_list[0]}'."
-        again = f"\nLet's try again, {name}!"
-        try_again = wrong_answer + again
-        print(try_again)
+        wrong_answer = \
+            f"'{answers_list[1]}' is wrong answer ;(. " \
+            f"Correct answer was '{answers_list[0]}'." \
+            f"\nLet's try again, {name}!"
+        print(wrong_answer)
         return False
 
 

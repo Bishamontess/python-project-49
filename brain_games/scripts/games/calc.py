@@ -3,10 +3,6 @@ import random
 import operator
 
 
-def game_condition():
-    print('What is the result of the expression?')
-
-
 def ask_question():
     num_1 = random.randint(10, 50)
     op = random.choice(['-', '+', '*'])

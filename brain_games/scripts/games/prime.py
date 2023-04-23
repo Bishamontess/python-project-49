@@ -2,10 +2,6 @@ import prompt
 import random
 
 
-def game_condition():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-
 def ask_question():
     num = random.randint(2, 1001)
     print('Question: ' + str(num))

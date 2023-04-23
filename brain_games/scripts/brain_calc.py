@@ -5,7 +5,7 @@ from brain_games.scripts.games import calc
 
 def main():
     name = welcome_user()
-    calc.game_condition()
+    print('What is the result of the expression?')
     calc.play_3_times(name)
 
 

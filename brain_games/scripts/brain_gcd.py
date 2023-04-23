@@ -5,7 +5,8 @@ from brain_games.scripts.games import gcd
 
 def main():
     name = cli.welcome_user()
-    gcd.game_condition()
+    print('Find the greatest common '
+          'divisor of given numbers.')
     gcd.play_3_times(name)
 
 

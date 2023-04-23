@@ -5,7 +5,7 @@ from brain_games.scripts.games import progression
 
 def main():
     name = cli.welcome_user()
-    progression.game_condition()
+    print('What number is missing in the progression?')
     progression.play_3_times(name)
 
 

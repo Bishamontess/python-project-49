@@ -2,10 +2,6 @@ import prompt
 import random
 
 
-def game_condition():
-    print('What number is missing in the progression?')
-
-
 def ask_question():
     num_1 = random.randint(0, 100)
     num_2 = random.randint(7, 20)

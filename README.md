@@ -5,7 +5,7 @@ Poetry 1.4.2
 
 Brain games are about counting numbers: if numbers even, count expression, what is the greatest common divisor and others.
 
-For installation type 'make package-install'.
+For installation: 'make install', 'make build', 'make package-install'.
 
 **Asciinemas:**
 

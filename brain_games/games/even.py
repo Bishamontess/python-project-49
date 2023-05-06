@@ -1,16 +1,23 @@
 import random
 
 
-CONDITION = 'Answer "yes" if the number is even, ' \
+GAME_RULE = 'Answer "yes" if the number is even, ' \
             'otherwise answer "no".'
 
 
-def ask_question():
-    number = random.randint(0, 100)
-    question = str(number)
-    if number % 2 == 0:
+def get_game():
+    answer = is_even()
+    if answer[0] is True:
         correct_answer = 'yes'
-        return question, correct_answer
+        return str(answer[1]), correct_answer
     else:
         correct_answer = 'no'
-        return question, correct_answer
+        return str(answer[1]), correct_answer
+
+
+def is_even():
+    number = random.randint(0, 100)
+    if number % 2 == 0:
+        return True, number
+    else:
+        return False, number

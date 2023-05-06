@@ -1,14 +1,14 @@
 import prompt
 
 
-def start_game(condition, game):
+def start_game(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    print(condition)
+    print(game.GAME_RULE)
     counter = 0
     while counter < 3:
-        question, correct_answer = game.ask_question()
+        question, correct_answer = game.get_game()
         print('Question: ' + question)
         user_answer = prompt.string('Your answer: ')
         if str(correct_answer) == str(user_answer):

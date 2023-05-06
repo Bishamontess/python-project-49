@@ -2,10 +2,15 @@ import random
 import operator
 
 
-CONDITION = 'What is the result of the expression?'
+GAME_RULE = 'What is the result of the expression?'
 
 
-def ask_question():
+def get_game():
+    question, correct_answer = calculate_expression()
+    return question, correct_answer
+
+
+def calculate_expression():
     num_1 = random.randint(10, 50)
     op = random.choice(['-', '+', '*'])
     num_2 = random.randint(1, 10)

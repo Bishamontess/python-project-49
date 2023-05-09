@@ -6,18 +6,17 @@ GAME_RULE = 'Answer "yes" if the number is even, ' \
 
 
 def get_game():
-    answer = is_even()
-    if answer[0] is True:
+    number = random.randint(0, 100)
+    if is_even(number):
         correct_answer = 'yes'
-        return str(answer[1]), correct_answer
+        return str(number), correct_answer
     else:
         correct_answer = 'no'
-        return str(answer[1]), correct_answer
+        return str(number), correct_answer
 
 
-def is_even():
-    number = random.randint(0, 100)
+def is_even(number):
     if number % 2 == 0:
-        return True, number
+        return True
     else:
-        return False, number
+        return False

@@ -6,21 +6,20 @@ GAME_RULE = 'Answer "yes" if given number is prime. ' \
 
 
 def get_game():
-    answer = is_prime()
-    if answer[0]:
+    number = random.randint(1, 1000)
+    if is_prime(number):
         correct_answer = 'yes'
-        return str(answer[1]), correct_answer
+        return str(number), correct_answer
     else:
         correct_answer = 'no'
-        return str(answer[1]), correct_answer
+        return str(number), correct_answer
 
 
-def is_prime():
-    num = random.randint(1, 1000)
-    for i in range(2, num):
-        if num % i == 0:
-            return False, num
+def is_prime(number):
+    for i in range(2, number):
+        if number % i == 0:
+            return False
         else:
             continue
     else:
-        return True, num
+        return True

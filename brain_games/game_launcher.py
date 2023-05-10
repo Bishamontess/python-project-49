@@ -15,9 +15,9 @@ def start_game(game):
             print('Correct!')
             counter += 1
         else:
-            return \
-                print(f"'{user_answer}' is wrong answer ;(. "
-                      f"Correct answer was '{correct_answer}'."
-                      f"\nLet's try again, {user_name}!"
-                      )
-    print(f'Congratulations, {user_name}!')
+            print(f"'{user_answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'."
+                  f"\nLet's try again, {user_name}!"
+                  )
+            return
+    return print(f'Congratulations, {user_name}!')

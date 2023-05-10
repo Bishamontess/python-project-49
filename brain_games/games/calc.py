@@ -16,11 +16,8 @@ def get_game():
 
 def calculate_expression(num_1, num_2, op):
     if op == '-':
-        correct_answer = sub(num_1, num_2)
-        return correct_answer
+        return sub(num_1, num_2)
     elif op == '+':
-        correct_answer = add(num_1, num_2)
-        return correct_answer
+        return add(num_1, num_2)
     elif op == '*':
-        correct_answer = mul(num_1, num_2)
-        return correct_answer
+        return mul(num_1, num_2)
